@@ -1,151 +1,76 @@
-# React Cryptocurrency App
-Consolidating RESTFUL calls from the CoinGecko API into a React application. I'll be using v3 of the API (the most recent version at the time of starting this project) This app will be using ant design for UI. 
+# 💹 React Cryptocurrency Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully-featured and responsive cryptocurrency dashboard built with **React**, **Ant Design**, and the **CoinGecko API**. This application consolidates real-time market data using RESTful API calls from CoinGecko v3, providing a comprehensive overview of global crypto metrics, coins, exchanges, and more.
 
-# Project Structure 
-Generated with `tree` command.
+![React Crypto App Banner](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.44%20pm.jpg)
+
+
+
+🔗 **Live Demo:** [Crypto](https://crypto-git-main-nisargpatel8823s-projects.vercel.app/#/)
+
+---
+
+## ✨ Key Features
+
+- 📈 Real-time cryptocurrency stats and charts
+- 🪙 Detailed coin data: market, developer, community stats
+- 💹 Exchange rates and exchange listings
+- 📢 Latest crypto-related status updates and events
+- 🌍 Global market overview
+- 🧭 Intuitive and scalable component-based architecture
+- 🎨 Clean and modern UI with [Ant Design](https://ant.design/)
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** – Frontend framework
+- **Ant Design** – UI library for elegant components
+- **Chart.js** – Interactive charts and data visualizations
+- **Axios** – API call management
+- **React Router** – Client-side routing
+
+---
+
+## 🚀 Getting Started
+
+To run this project locally, follow the steps below.
+
+### Prerequisites
+
+Ensure you have **Node.js** and **npm** installed.
+
+```bash
+npm install npm@latest -g
 ```
-.
-├── API
-│   └── index.js
-├── ChartConfig
-│   └── index.js
-├── components
-│   ├── App.css
-│   ├── App.js
-│   ├── Coins
-│   │   ├── ReactCoinCommunityStats.js
-│   │   ├── ReactCoinDetailSummary.js
-│   │   ├── ReactCoinDeveloperStats.js
-│   │   ├── ReactCoinMarketDetailedStats.js
-│   │   ├── ReactCoinMarketStats.js
-│   │   ├── ReactCoinScores.js
-│   │   ├── ReactCoinsDetail.js
-│   │   └── ReactCoinsList.js
-│   ├── Empty
-│   │   └── ReactEmpty.js
-│   ├── Events
-│   │   └── ReactEvents.js
-│   ├── ExchangeRates
-│   │   └── ReactExchangeRates.js
-│   ├── Exchanges
-│   │   └── ReactExchangesList.js
-│   ├── General
-│   │   ├── ReactAbout.js
-│   │   └── ReactHome.js
-│   ├── Global
-│   │   └── ReactGlobal.js
-│   ├── Navigation
-│   │   ├── ReactFooter.js
-│   │   ├── ReactHeader.js
-│   │   └── ReactSider.js
-│   └── StatusUpdates
-│       └── ReactStatusUpdates.js
-├── constants
-│   └── index.js
-├── images
-│   ├── branding
-│   │   └── CoinGecko.png
-│   ├── flaticon
-│   │   ├── 001-bitcoin.svg
-│   │   ├── 001-chat.svg
-│   │   ├── 002-bitcoin-1.svg
-│   │   ├── 002-bitcoin.svg
-│   │   ├── 003-bitcoin-2.svg
-│   │   ├── 003-smartphone.svg
-│   │   ├── 004-exchange.svg
-│   │   ├── 005-idea.svg
-│   │   ├── 006-binary.svg
-│   │   └── worldwide.svg
-│   └── logo
-│       └── logo.png
-├── index.js
-├── redux_actions
-│   └── index.js
-├── redux_reducers
-│   └── index.js
-└── styles
-    └── index.js
+🧩 Installation
+Clone the repository
+
+```bash
+git clone https://github.com/nisargpatel8823/Crypto.git
 ```
+Navigate into the project
 
-# Screenshots
-
-**home**
-![home](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.44%20pm.jpg)
-
-**about**
-![about](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.01.08%20pm.jpg)
-
-**status updates**
-![status updates](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%201.59.49%20pm.jpg)
-
-**coins listing**
-![coins listing](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%201.59.56%20pm.jpg)
-
-**coin details 1**
-![coin details](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%201.59.49%20pm.jpg)
-
-**coin details 2**
-![coin details 2](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.04%20pm.jpg)
-
-**coin details 3**
-![coin details 3](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.07%20pm.jpg)
-
-**event list**
-![event listing](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.16%20pm.jpg)
-
-**exchanges listing**
-![exchanges listing](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.31%20pm.jpg)
-
-**exchange rates**
-![exchange rates](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.36%20pm.jpg)
-
-**global**
-![global](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.40%20pm.jpg)
-
-
-# Themes
-The themes for this app will directly correlate to the api endpoints provided by the CoinGecko API. I want to split up the app into digestible React components in the following areas, which will most likely form part of a larger dashboard interface.
-
-- Coins
-- Exchanges
-- Status Updates
-- Exchange Rates
-- Events
-- Global
-
-# Requirements (npm)
-Requirements for this project can be found in the package.json. And can be installed with `npm install` from root of the project directory.
-
-I aim to use the following packages:
-**must have packages**
-- antd (ui framework for react)
-- react (front-end)
-- react-router-dom (routing for react)
-- chartjs (charting library)
-- axios (graceful api calls)
-
-**optional packages**
-- redux (may need redux for state management if number of components grows)
-- ant motion (animations for ant design ui)
-
-
-# Tests
-
-# Sources
-- [The CoinGecko API](https://www.coingecko.com/en/api#)
-- [React documentation](https://reactjs.org/docs/getting-started.html)
-- [Ant Design Documentation](https://ant.design/docs/react/introduce)
-
-# Steps to reproduce
-
-```sh
-# install dependencies and start local server (make sure you have nvm and yarn installed beforehand)
-nvm use
-yarn
-yarn start
-
-# building
-yarn build
+```bash
+cd Text-to-speech
 ```
+Install dependencies
+```bash
+npm install
+```
+Start the development server
+
+```bash
+
+npm start
+```
+---
+
+📬 Contact
+---
+
+GitHub: [@nisargpatel8823](https://github.com/nisargpatel8823)
+
+LinkedIn: [nisargpatel8823](https://www.linkedin.com/in/nisargpatel8823/)
+
+
