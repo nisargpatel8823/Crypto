@@ -52,7 +52,7 @@ git clone https://github.com/nisargpatel8823/Crypto.git
 Navigate into the project
 
 ```bash
-cd Text-to-speech
+cd Crypto
 ```
 Install dependencies
 ```bash
