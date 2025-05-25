@@ -2,11 +2,12 @@
 
 A fully-featured and responsive cryptocurrency dashboard built with **React**, **Ant Design**, and the **CoinGecko API**. This application consolidates real-time market data using RESTful API calls from CoinGecko v3, providing a comprehensive overview of global crypto metrics, coins, exchanges, and more.
 
-![React Crypto App Banner](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.44%20pm.jpg)
+![React Crypto App Banner](https://github.com/user-attachments/assets/49bbb20c-316b-45f6-9689-44b1a6e17de6)
 
 
 
-🔗 **Live Demo:** [Crypto](https://crypto-git-main-nisargpatel8823s-projects.vercel.app/#/)
+
+🔗 **Live Demo:** [Crypto](https://crypto-nisargpatel8823s-projects.vercel.app/#/)
 
 ---
 
